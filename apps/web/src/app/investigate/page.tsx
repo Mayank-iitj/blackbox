@@ -1,5 +1,5 @@
 "use client";
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Graph } from '@/components/Graph';
 import { EvidenceDrawer } from '@/components/EvidenceDrawer';
@@ -27,7 +27,7 @@ const INITIAL_EDGES = [
   { id: 'e7-8', source: 'S07', target: 'S08', label: '(pass)' },
 ];
 
-export default function InvestigatePage() {
+function InvestigateContent() {
   const searchParams = useSearchParams();
   const runId = searchParams.get('run_id') || 'demo';
   const hasChaos = searchParams.has('chaos');
@@ -172,5 +172,13 @@ export default function InvestigatePage() {
         <EvidenceDrawer isOpen={drawerOpen} onClose={() => setDrawerOpen(false)} selectedItem={selectedItem} />
       </div>
     </div>
+  );
+}
+
+export default function InvestigatePage() {
+  return (
+    <Suspense fallback={<div className="flex h-screen w-full items-center justify-center bg-[#000000] text-white font-mono text-sm tracking-widest">LOADING TELEMETRY...</div>}>
+      <InvestigateContent />
+    </Suspense>
   );
 }
