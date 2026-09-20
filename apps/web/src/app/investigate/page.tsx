@@ -1,4 +1,5 @@
 "use client";
+import dynamic from 'next/dynamic';
 import React, { useState, useEffect, Suspense } from 'react';
 import { useSearchParams } from 'next/navigation';
 import { Graph } from '@/components/Graph';
@@ -175,10 +176,6 @@ function InvestigateContent() {
   );
 }
 
-export default function InvestigatePage() {
-  return (
-    <Suspense fallback={<div className="flex h-screen w-full items-center justify-center bg-[#000000] text-white font-mono text-sm tracking-widest">LOADING TELEMETRY...</div>}>
-      <InvestigateContent />
-    </Suspense>
-  );
-}
+export default dynamic(() => Promise.resolve(InvestigateContent), {
+  ssr: false,
+});
