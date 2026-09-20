@@ -7,9 +7,9 @@
   <br />
 
   <p align="center">
-    <a href="https://github.com/your-username/blackbox/issues"><img src="https://img.shields.io/github/issues/your-username/blackbox?style=for-the-badge&color=ef4444" alt="Issues" /></a>
-    <a href="https://github.com/your-username/blackbox/pulls"><img src="https://img.shields.io/github/issues-pr/your-username/blackbox?style=for-the-badge&color=3b82f6" alt="Pull Requests" /></a>
-    <a href="https://github.com/your-username/blackbox/blob/main/LICENSE"><img src="https://img.shields.io/github/license/your-username/blackbox?style=for-the-badge&color=10b981" alt="License" /></a>
+    <a href="https://github.com/Mayank-iitj/blackbox/issues"><img src="https://img.shields.io/github/issues/Mayank-iitj/blackbox?style=for-the-badge&color=ef4444" alt="Issues" /></a>
+    <a href="https://github.com/Mayank-iitj/blackbox/pulls"><img src="https://img.shields.io/github/issues-pr/Mayank-iitj/blackbox?style=for-the-badge&color=3b82f6" alt="Pull Requests" /></a>
+    <a href="https://github.com/Mayank-iitj/blackbox/blob/main/LICENSE"><img src="https://img.shields.io/github/license/Mayank-iitj/blackbox?style=for-the-badge&color=10b981" alt="License" /></a>
     <img src="https://img.shields.io/badge/Next.js-000000?style=for-the-badge&logo=next.js&logoColor=white" alt="Next.js" />
     <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
   </p>
